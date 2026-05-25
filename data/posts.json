@@ -117,5 +117,15 @@
         "readTime": "11 min read",
         "image": "assets/quic_protocol_hero.png",
         "url": "posts/quic-protocol.html"
+    },
+    {
+        "id": "credential-free-workers",
+        "title": "Your AI Agent Worker Shouldn't Have Your API Keys",
+        "excerpt": "An architectural pattern for safely running untrusted agent code: credential-free workers, signed cross-process RPC, per-job AEAD-bound secret envelopes.",
+        "tag": "Architecture",
+        "date": "May 25, 2026",
+        "readTime": "18 min read",
+        "image": "assets/credential_free_workers_hero.png",
+        "url": "posts/credential-free-workers.html"
     }
 ]

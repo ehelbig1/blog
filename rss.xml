@@ -5,14 +5,24 @@
     <link>https://blog.evanhelbig.com</link>
     <description>Notes on software, systems, and security from Evan Helbig.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.evanhelbig.com/rss.xml" rel="self" type="application/rss+xml" />
-    
+
     <image>
         <url>https://blog.evanhelbig.com/favicon.svg</url>
         <title>Evan Helbig</title>
         <link>https://blog.evanhelbig.com</link>
     </image>
+
+    <item>
+        <title>Your AI Agent Worker Shouldn't Have Your API Keys</title>
+        <link>https://blog.evanhelbig.com/posts/credential-free-workers.html</link>
+        <guid isPermaLink="true">https://blog.evanhelbig.com/posts/credential-free-workers.html</guid>
+        <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+        <category>Architecture</category>
+        <description><![CDATA[An architectural pattern for safely running untrusted agent code: credential-free workers, signed cross-process RPC, per-job AEAD-bound secret envelopes.]]></description>
+        <media:content url="https://blog.evanhelbig.com/assets/credential_free_workers_hero.png" medium="image" />
+    </item>
 
     <item>
         <title>QUIC: The Protocol That Rewrote the Internet</title>
