@@ -25,17 +25,14 @@ Content is handled through a "Static Registry" pattern to ensure maximum perform
     *   `<meta name="description">`: Compelling excerpt.
     *   `og:image`: Path to the hero asset (e.g., `../assets/your-hero.png`).
 
-### Step 2: Update the Global Registries
-The site uses two registries to drive the UI. Both **must** be updated:
-
-1.  **`data/posts.json`**: This is used for potential external integrations and as a data backup.
-2.  **`scripts.js`**: Update the `allPosts` array at the top of the file. This drives the real-time gallery, tag filtering, and search engine.
+### Step 2: Register the Post
+Add an entry to **`data/posts.json`** — the homepage grid fetches this file at load time and renders cards from it. No edit to `scripts.js` is needed; it consumes the JSON directly.
 
 **Required Fields:**
 - `id`: Unique kebab-case string.
 - `title`: Full title.
 - `excerpt`: 1-2 sentence summary.
-- `tag`: One of `Architecture`, `Research`, `Languages`, `Cryptography`.
+- `tag`: e.g. `Architecture`, `Research`, `Languages`, `Cryptography`, `DevSecOps`. The homepage filter buttons (defined in `index.html`) currently expose `Architecture`, `Research`, and `Languages` — any other tag is still searchable and shows under "All", but if you want a dedicated filter button add one to `#tag-filters` in `index.html`.
 - `date`: Format `Apr 28, 2026`.
 - `readTime`: e.g., `12 min read`.
 - `image`: Path starting with `assets/`.
@@ -43,7 +40,7 @@ The site uses two registries to drive the UI. Both **must** be updated:
 
 ### Step 3: SEO & RSS Syndication
 1.  **`sitemap.xml`**: Add the new URL with a `priority` of `0.8`.
-2.  **`rss.xml`**: Add a new `<item>` block. This is our primary distribution channel for security engineers. Ensure the `pubDate` is in RFC 822 format (e.g., `Tue, 28 Apr 2026 00:00:00 +0000`).
+2.  **`rss.xml`**: Add a new `<item>` block. This is the primary distribution channel for readers. Ensure the `pubDate` is in RFC 822 format (e.g., `Tue, 28 Apr 2026 00:00:00 +0000`).
 
 ---
 
@@ -68,7 +65,7 @@ To maintain the premium feel of the brand, follow these visual guidelines:
 - **Storage**: Always place images in the `assets/` directory with descriptive names.
 
 ### 3. Special Components
-- **Pro-Tips**: Use the standardized cyan-bordered callout for critical security insights:
+- **Pro-Tips**: Use the standardized cyan-bordered callout for critical insights:
   ```html
   <div class="pro-tip" style="background: rgba(0, 245, 255, 0.05); border-left: 4px solid var(--primary); padding: 1.5rem; margin: 2rem 0; border-radius: 4px;">
       <strong style="color: var(--primary); display: block; margin-bottom: 0.5rem;">HEADING</strong>
@@ -80,7 +77,7 @@ To maintain the premium feel of the brand, follow these visual guidelines:
 
 ## 🚀 Best Practices
 
-- **Technical Depth**: This blog is for developers. Avoid surface-level content; include code examples, architecture diagrams (Mermaid-style or images), and real-world security tradeoffs.
+- **Technical Depth**: This blog is for developers. Avoid surface-level content; include code examples, architecture diagrams (Mermaid-style or images), and real-world tradeoffs.
 - **Temporal Alignment**: Ensure dates are current. For the 2026 deployment, all content should reflect the state of the art as of the 2026 timeline.
 - **Performance**: Optimize PNG assets before pushing. Keep the overall page load under 2 seconds.
 - **Accessibility**: Every image MUST have a descriptive `alt` tag.
