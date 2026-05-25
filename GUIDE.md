@@ -1,6 +1,6 @@
-# Aegix Blog Maintenance & Content Guide
+# Blog Maintenance & Content Guide
 
-This document outlines the workflow for creating high-fidelity technical articles for the Aegix blog and maintaining the "Cyber-Security Noir" aesthetic.
+This document outlines the workflow for creating high-fidelity technical articles for blog.evanhelbig.com and maintaining the "Cyber-Security Noir" aesthetic.
 
 ## 🚀 Post-Creation Checklist (Mandatory)
 
@@ -15,18 +15,18 @@ To ensure a new post is visible and discoverable, you **must** update the follow
 
 ## ✍️ Creating a New Blog Post
 
-Content for Aegix is handled through a "Static Registry" pattern to ensure maximum performance and zero backend latency.
+Content is handled through a "Static Registry" pattern to ensure maximum performance and zero backend latency.
 
 ### Step 1: Create the HTML File
 1.  Navigate to the `posts/` directory.
 2.  Duplicate an existing post (e.g., `zero-trust.html`) to use as a template.
 3.  Update the `<head>` metadata:
-    *   `<title>`: `Title | Aegix Blog`
+    *   `<title>`: `Title | Evan Helbig`
     *   `<meta name="description">`: Compelling excerpt.
     *   `og:image`: Path to the hero asset (e.g., `../assets/your-hero.png`).
 
 ### Step 2: Update the Global Registries
-Aegix uses two registries to drive the UI. Both **must** be updated:
+The site uses two registries to drive the UI. Both **must** be updated:
 
 1.  **`data/posts.json`**: This is used for potential external integrations and as a data backup.
 2.  **`scripts.js`**: Update the `allPosts` array at the top of the file. This drives the real-time gallery, tag filtering, and search engine.
@@ -49,14 +49,14 @@ Aegix uses two registries to drive the UI. Both **must** be updated:
 
 ## 📡 Distribution Strategy
 
-Aegix follows a privacy-first distribution model. We do not use third-party email trackers or centralized newsletter platforms.
+This blog follows a privacy-first distribution model. No third-party email trackers or centralized newsletter platforms.
 
-- **RSS Feed**: Our primary "push" mechanism. Readers are encouraged to use professional aggregators (Feedly, Inoreader, or CLI-based tools).
-- **Social**: Manual updates are posted to the Aegix GitHub and LinkedIn profiles.
+- **RSS Feed**: Primary "push" mechanism. Readers are encouraged to use professional aggregators (Feedly, Inoreader, or CLI-based tools).
+- **Social**: Manual updates are posted to GitHub and LinkedIn.
 
 ---
 
-To maintain the premium feel of the Aegix brand, follow these visual guidelines:
+To maintain the premium feel of the brand, follow these visual guidelines:
 
 ### 1. Typography & Hierarchy
 - Use the `decrypt` class for main titles to enable the atomic scrambling animation.
@@ -80,10 +80,10 @@ To maintain the premium feel of the Aegix brand, follow these visual guidelines:
 
 ## 🚀 Best Practices
 
-- **Technical Depth**: Aegix is for developers. Avoid surface-level content; include code examples, architecture diagrams (Mermaid-style or images), and real-world security tradeoffs.
+- **Technical Depth**: This blog is for developers. Avoid surface-level content; include code examples, architecture diagrams (Mermaid-style or images), and real-world security tradeoffs.
 - **Temporal Alignment**: Ensure dates are current. For the 2026 deployment, all content should reflect the state of the art as of the 2026 timeline.
 - **Performance**: Optimize PNG assets before pushing. Keep the overall page load under 2 seconds.
 - **Accessibility**: Every image MUST have a descriptive `alt` tag.
 
 ---
-*Built for the perimeter. © 2026 Aegix Security Inc.*
+*© 2026 Evan Helbig.*

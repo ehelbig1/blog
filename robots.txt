@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://blog.aegix.dev/sitemap.xml
+Sitemap: https://blog.evanhelbig.com/sitemap.xml

@@ -1,12 +1,12 @@
 use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen]
-pub struct AegixEngine;
+pub struct BlogEngine;
 
 #[wasm_bindgen]
-impl AegixEngine {
-    pub fn new() -> AegixEngine {
-        AegixEngine
+impl BlogEngine {
+    pub fn new() -> BlogEngine {
+        BlogEngine
     }
 
     pub fn process_command(&self, cmd: &str) -> String {
@@ -69,7 +69,7 @@ impl AegixEngine {
 
     fn verify_simulated_jwt(&self, token: &str) -> String {
         if token.starts_with("eyJ") && token.contains(".") {
-            "[VALID] JWT Signature Matched. Principal: aegix-admin. Scope: full-access.".to_string()
+            "[VALID] JWT Signature Matched. Principal: admin. Scope: full-access.".to_string()
         } else {
             "[INVALID] Signature Mismatch or Malformed Token.".to_string()
         }

@@ -1,13 +1,13 @@
 {
-  "name": "blog-aegix-dev",
+  "name": "blog-evanhelbig-com",
   "version": "1.0.0",
-  "description": "",
+  "description": "Evan Helbig's personal blog at blog.evanhelbig.com",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Evan Helbig",
   "license": "ISC",
   "type": "commonjs"
 }

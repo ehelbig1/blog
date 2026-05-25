@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             allPosts = await response.json();
             renderPosts();
         } catch (error) {
-            console.error('Aegix Registry Error:', error);
+            console.error('Blog Registry Error:', error);
             // Fallback for local development or missing registry
             const grid = document.getElementById('blog-grid');
             if (grid) grid.innerHTML = '<div style="color: var(--secondary); text-align: center; padding: 2rem;">[CRITICAL_ERROR] UNABLE TO REACH REGISTRY</div>';
@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     }
 
-    // --- Aegix Security Engine (WASM-Ready Bridge) ---
+    // --- WASM Engine Bridge ---
     const wasmProxy = {
         genkey: () => {
             // Simulated Rust Logic
@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Simulated Rust Logic
             const valid = token && token.startsWith('eyJ') && token.includes('.');
             return valid ?
-                `<span style="color: var(--primary)">[WASM_ENGINE]</span> JWT Signature Matched. Principal: aegix-admin.` :
+                `<span style="color: var(--primary)">[WASM_ENGINE]</span> JWT Signature Matched. Principal: admin.` :
                 `<span style="color: var(--primary)">[WASM_ENGINE]</span> [INVALID] Signature Mismatch.`;
         },
         encrypt: (data) => {
@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // --- Aegix Security Console (Terminal) ---
+    // --- Console (Terminal) ---
     const termTrigger = document.querySelector('.terminal-trigger');
     const termWindow = document.querySelector('.terminal-window');
     const termClose = document.querySelector('.terminal-close');

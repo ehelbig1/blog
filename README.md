@@ -1,8 +1,8 @@
-# Aegix | Security-First Developer Blog
+# Evan Helbig | Personal Blog
 
-A premium, high-fidelity blog platform designed for security researchers, DevOps engineers, and technical developers. Built with a "Cyber-Security Noir" aesthetic, Aegix combines deep technical insights with an interactive, immersive user experience.
+A premium, high-fidelity blog platform built with a "Cyber-Security Noir" aesthetic, combining deep technical writing on software, systems, and security with an interactive, immersive user experience.
 
-Live at: [blog.aegix.dev](https://blog.aegix.dev)
+Live at: [blog.evanhelbig.com](https://blog.evanhelbig.com)
 
 ## 🚀 Key Features
 
@@ -41,7 +41,7 @@ The site is configured to deploy automatically via GitHub Pages.
     1.  Make edits and verify locally.
     2.  `git add . && git commit -m "feat: add new post"`
     3.  `git push origin main`
-- **Live**: Rebuilds automatically at `blog.aegix.dev` via GitHub Actions.
+- **Live**: Rebuilds automatically at `blog.evanhelbig.com` via GitHub Actions.
 
 ---
-*Built for developers, by developers. © 2026 Aegix Security Inc.*
+*© 2026 Evan Helbig.*

@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hardening the Software Supply Chain | Aegix Blog</title>
+    <title>Hardening the Software Supply Chain | Evan Helbig</title>
     <meta name="description" content="A deep dive into securing CI/CD pipelines and managing third-party dependency risks.">
-    <meta property="og:title" content="Hardening the Software Supply Chain | Aegix Blog">
+    <meta property="og:title" content="Hardening the Software Supply Chain | Evan Helbig">
     <meta property="og:image" content="../assets/supply_chain_security_1777315341624.png">
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-    <link rel="alternate" type="application/rss+xml" title="Aegix Security Blog RSS Feed" href="https://blog.aegix.dev/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Evan Helbig // RSS" href="https://blog.evanhelbig.com/rss.xml" />
     <link rel="stylesheet" href="../styles.css">
-    <link rel="alternate" type="application/rss+xml" title="Aegix Security Blog RSS Feed" href="https://blog.aegix.dev/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Evan Helbig // RSS" href="https://blog.evanhelbig.com/rss.xml" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
     <div class="bg-grid"></div>
 
     <header>
-        <a href="../index.html" class="logo">AEGIX</a>
+        <a href="../index.html" class="logo">EVAN HELBIG</a>
         <nav>
             <ul>
                 <li><a href="../index.html#latest">Insights</a></li>
@@ -78,8 +78,8 @@ jobs:
 
             <pre><code class="language-bash"># Verifying artifact provenance with Cosign
 cosign verify-attestation --type slsaprovenance \
-  --certificate-identity "https://github.com/aegix/core/.github/workflows/release.yml" \
-  ghcr.io/aegix/core:latest</code></pre>
+  --certificate-identity "https://github.com/example/core/.github/workflows/release.yml" \
+  ghcr.io/example/core:latest</code></pre>
 
             <h2>Core Principles of Hardening</h2>
             <ul>
@@ -96,11 +96,11 @@ cosign verify-attestation --type slsaprovenance \
 
     <footer id="about">
         <div class="footer-content">
-            <div class="logo" style="margin-bottom: 1rem; opacity: 0.8;">AEGIX</div>
-            <p style="color: var(--text-dim); margin-bottom: 1.5rem;">&copy; 2026 Aegix Security Inc. Built for developers, by developers.</p>
+            <div class="logo" style="margin-bottom: 1rem; opacity: 0.8;">EVAN HELBIG</div>
+            <p style="color: var(--text-dim); margin-bottom: 1.5rem;">&copy; 2026 Evan Helbig. Notes from the build.</p>
             <div class="social-links">
-                <a href="https://github.com/orgs/aegix-dev/dashboard" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://www.linkedin.com/company/107901904" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="../rss.xml" target="_blank" rel="noopener noreferrer">RSS</a>
+                <a href="https://github.com/ehelbig1" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/evanhelbig" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="../rss.xml" target="_blank" rel="noopener noreferrer">RSS</a>
             </div>
         </div>
     </footer>

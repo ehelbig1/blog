@@ -1,137 +1,137 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
 <channel>
-    <title>Aegix Security Blog</title>
-    <link>https://blog.aegix.dev</link>
-    <description>Insights, research, and guides on modern application security, zero-trust architectures, and developer productivity.</description>
+    <title>Evan Helbig</title>
+    <link>https://blog.evanhelbig.com</link>
+    <description>Notes on software, systems, and security from Evan Helbig.</description>
     <language>en-us</language>
     <lastBuildDate>Wed, 06 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blog.aegix.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.evanhelbig.com/rss.xml" rel="self" type="application/rss+xml" />
     
     <image>
-        <url>https://blog.aegix.dev/assets/aegix_logo.png</url>
-        <title>Aegix Security Blog</title>
-        <link>https://blog.aegix.dev</link>
+        <url>https://blog.evanhelbig.com/favicon.svg</url>
+        <title>Evan Helbig</title>
+        <link>https://blog.evanhelbig.com</link>
     </image>
 
     <item>
         <title>QUIC: The Protocol That Rewrote the Internet</title>
-        <link>https://blog.aegix.dev/posts/quic-protocol.html</link>
-        <guid isPermaLink="true">https://blog.aegix.dev/posts/quic-protocol.html</guid>
+        <link>https://blog.evanhelbig.com/posts/quic-protocol.html</link>
+        <guid isPermaLink="true">https://blog.evanhelbig.com/posts/quic-protocol.html</guid>
         <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
         <category>Architecture</category>
         <description><![CDATA[Explore how the QUIC protocol integrates TLS 1.3 to eliminate latency and harden cloud-native networking.]]></description>
-        <media:content url="https://blog.aegix.dev/assets/quic_protocol_hero.png" medium="image" />
+        <media:content url="https://blog.evanhelbig.com/assets/quic_protocol_hero.png" medium="image" />
     </item>
 
     <item>
         <title>The Black Box: Confidential Computing in the Cloud</title>
-        <link>https://blog.aegix.dev/posts/confidential-computing.html</link>
-        <guid isPermaLink="true">https://blog.aegix.dev/posts/confidential-computing.html</guid>
+        <link>https://blog.evanhelbig.com/posts/confidential-computing.html</link>
+        <guid isPermaLink="true">https://blog.evanhelbig.com/posts/confidential-computing.html</guid>
         <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
         <category>Architecture</category>
         <description><![CDATA[Explore how Trusted Execution Environments (TEEs) provide hardware-level isolation to protect your data in use.]]></description>
-        <media:content url="https://blog.aegix.dev/assets/confidential_computing_hero.png" medium="image" />
+        <media:content url="https://blog.evanhelbig.com/assets/confidential_computing_hero.png" medium="image" />
     </item>
 
     <item>
         <title>Wasm vs. Containers: The Future of Cloud-Native</title>
-        <link>https://blog.aegix.dev/posts/wasm-vs-containers.html</link>
-        <guid isPermaLink="true">https://blog.aegix.dev/posts/wasm-vs-containers.html</guid>
+        <link>https://blog.evanhelbig.com/posts/wasm-vs-containers.html</link>
+        <guid isPermaLink="true">https://blog.evanhelbig.com/posts/wasm-vs-containers.html</guid>
         <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
         <category>Architecture</category>
         <description><![CDATA[A deep dive into why WebAssembly is challenging Docker containers as the premier compute unit for edge and cloud-native applications.]]></description>
-        <media:content url="https://blog.aegix.dev/assets/wasm_vs_containers_hero.png" medium="image" />
+        <media:content url="https://blog.evanhelbig.com/assets/wasm_vs_containers_hero.png" medium="image" />
     </item>
 
     <item>
         <title>Shifting Left is Broken: IaC Security</title>
-        <link>https://blog.aegix.dev/posts/iac-security.html</link>
-        <guid isPermaLink="true">https://blog.aegix.dev/posts/iac-security.html</guid>
+        <link>https://blog.evanhelbig.com/posts/iac-security.html</link>
+        <guid isPermaLink="true">https://blog.evanhelbig.com/posts/iac-security.html</guid>
         <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
         <category>DevSecOps</category>
         <description><![CDATA[Discover why traditional shift-left security fails and how to secure your Infrastructure as Code with Policy-as-Code.]]></description>
-        <media:content url="https://blog.aegix.dev/assets/iac_hero.png" medium="image" />
+        <media:content url="https://blog.evanhelbig.com/assets/iac_hero.png" medium="image" />
     </item>
 
     <item>
         <title>Seeing Everything: eBPF Runtime Security</title>
-        <link>https://blog.aegix.dev/posts/ebpf-security.html</link>
-        <guid isPermaLink="true">https://blog.aegix.dev/posts/ebpf-security.html</guid>
+        <link>https://blog.evanhelbig.com/posts/ebpf-security.html</link>
+        <guid isPermaLink="true">https://blog.evanhelbig.com/posts/ebpf-security.html</guid>
         <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
         <category>Architecture</category>
         <description><![CDATA[Discover how eBPF provides unprecedented, high-performance runtime observability and security in the Linux kernel.]]></description>
-        <media:content url="https://blog.aegix.dev/assets/ebpf_hero.png" medium="image" />
+        <media:content url="https://blog.evanhelbig.com/assets/ebpf_hero.png" medium="image" />
     </item>
 
     <item>
         <title>Wasm: Near-Native Speed, Zero-Trust Execution</title>
-        <link>https://blog.aegix.dev/posts/wasm-security.html</link>
-        <guid isPermaLink="true">https://blog.aegix.dev/posts/wasm-security.html</guid>
+        <link>https://blog.evanhelbig.com/posts/wasm-security.html</link>
+        <guid isPermaLink="true">https://blog.evanhelbig.com/posts/wasm-security.html</guid>
         <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
         <category>Architecture</category>
         <description><![CDATA[Exploring the security architecture and performance benefits of WebAssembly for modern systems programming.]]></description>
-        <media:content url="https://blog.aegix.dev/assets/wasm_security.png" medium="image" />
+        <media:content url="https://blog.evanhelbig.com/assets/wasm_security.png" medium="image" />
     </item>
 
     <item>
         <title>Env Vars vs. KMS: The Secret Management Paradox</title>
-        <link>https://blog.aegix.dev/posts/secrets-management.html</link>
-        <guid isPermaLink="true">https://blog.aegix.dev/posts/secrets-management.html</guid>
+        <link>https://blog.evanhelbig.com/posts/secrets-management.html</link>
+        <guid isPermaLink="true">https://blog.evanhelbig.com/posts/secrets-management.html</guid>
         <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
         <category>Research</category>
         <description><![CDATA[A deep dive into the security tradeoffs between environment variables and dedicated Key Management Systems in modern CI/CD pipelines.]]></description>
-        <media:content url="https://blog.aegix.dev/assets/secrets_management.png" medium="image" />
+        <media:content url="https://blog.evanhelbig.com/assets/secrets_management.png" medium="image" />
     </item>
 
     <item>
         <title>Scaling Trust: A Guide to Envelope Encryption</title>
-        <link>https://blog.aegix.dev/posts/envelope-encryption.html</link>
-        <guid isPermaLink="true">https://blog.aegix.dev/posts/envelope-encryption.html</guid>
+        <link>https://blog.evanhelbig.com/posts/envelope-encryption.html</link>
+        <guid isPermaLink="true">https://blog.evanhelbig.com/posts/envelope-encryption.html</guid>
         <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
         <category>Cryptography</category>
         <description><![CDATA[Protect your data at scale by mastering the relationship between DEKs and KEKs.]]></description>
-        <media:content url="https://blog.aegix.dev/assets/envelope_encryption_hero_1777319572101.png" medium="image" />
+        <media:content url="https://blog.evanhelbig.com/assets/envelope_encryption_hero_1777319572101.png" medium="image" />
     </item>
 
     <item>
         <title>Why Rust is the Future of Secure Systems</title>
-        <link>https://blog.aegix.dev/posts/rust-future.html</link>
-        <guid isPermaLink="true">https://blog.aegix.dev/posts/rust-future.html</guid>
+        <link>https://blog.evanhelbig.com/posts/rust-future.html</link>
+        <guid isPermaLink="true">https://blog.evanhelbig.com/posts/rust-future.html</guid>
         <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
         <category>Languages</category>
         <description><![CDATA[Exploring memory safety, ownership, and how Rust eliminates entire classes of vulnerabilities.]]></description>
-        <media:content url="https://blog.aegix.dev/assets/rust_security_hero_1777315358276.png" medium="image" />
+        <media:content url="https://blog.evanhelbig.com/assets/rust_security_hero_1777315358276.png" medium="image" />
     </item>
 
     <item>
         <title>Hardening the Software Supply Chain</title>
-        <link>https://blog.aegix.dev/posts/supply-chain.html</link>
-        <guid isPermaLink="true">https://blog.aegix.dev/posts/supply-chain.html</guid>
+        <link>https://blog.evanhelbig.com/posts/supply-chain.html</link>
+        <guid isPermaLink="true">https://blog.evanhelbig.com/posts/supply-chain.html</guid>
         <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
         <category>Research</category>
         <description><![CDATA[A deep dive into securing your CI/CD pipelines and managing third-party dependency risks.]]></description>
-        <media:content url="https://blog.aegix.dev/assets/supply_chain_security_1777315341624.png" medium="image" />
+        <media:content url="https://blog.evanhelbig.com/assets/supply_chain_security_1777315341624.png" medium="image" />
     </item>
 
     <item>
         <title>Beyond the Perimeter: Implementing Zero Trust</title>
-        <link>https://blog.aegix.dev/posts/zero-trust.html</link>
-        <guid isPermaLink="true">https://blog.aegix.dev/posts/zero-trust.html</guid>
+        <link>https://blog.evanhelbig.com/posts/zero-trust.html</link>
+        <guid isPermaLink="true">https://blog.evanhelbig.com/posts/zero-trust.html</guid>
         <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
         <category>Architecture</category>
         <description><![CDATA[Why traditional network security is failing modern distributed teams and how to fix it.]]></description>
-        <media:content url="https://blog.aegix.dev/assets/zero_trust_hero_1777315326317.png" medium="image" />
+        <media:content url="https://blog.evanhelbig.com/assets/zero_trust_hero_1777315326317.png" medium="image" />
     </item>
 
     <item>
         <title>The Emerging Landscape of AI-Driven Threats</title>
-        <link>https://blog.aegix.dev/posts/ai-threats.html</link>
-        <guid isPermaLink="true">https://blog.aegix.dev/posts/ai-threats.html</guid>
+        <link>https://blog.evanhelbig.com/posts/ai-threats.html</link>
+        <guid isPermaLink="true">https://blog.evanhelbig.com/posts/ai-threats.html</guid>
         <pubDate>Sun, 19 Apr 2026 00:00:00 +0000</pubDate>
         <category>Research</category>
         <description><![CDATA[How large language models are being leveraged for automated phishing and vulnerability discovery.]]></description>
-        <media:content url="https://blog.aegix.dev/assets/ai_threats_hero_v3_1777321659472.png" medium="image" />
+        <media:content url="https://blog.evanhelbig.com/assets/ai_threats_hero_v3_1777321659472.png" medium="image" />
     </item>
 
 </channel>

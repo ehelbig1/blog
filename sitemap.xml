@@ -1,67 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://blog.aegix.dev/</loc>
+        <loc>https://blog.evanhelbig.com/</loc>
         <lastmod>2026-05-04</lastmod>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://blog.aegix.dev/posts/zero-trust.html</loc>
+        <loc>https://blog.evanhelbig.com/posts/zero-trust.html</loc>
         <lastmod>2026-04-21</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://blog.aegix.dev/posts/supply-chain.html</loc>
+        <loc>https://blog.evanhelbig.com/posts/supply-chain.html</loc>
         <lastmod>2026-04-23</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://blog.aegix.dev/posts/rust-future.html</loc>
+        <loc>https://blog.evanhelbig.com/posts/rust-future.html</loc>
         <lastmod>2026-04-25</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://blog.aegix.dev/posts/envelope-encryption.html</loc>
+        <loc>https://blog.evanhelbig.com/posts/envelope-encryption.html</loc>
         <lastmod>2026-04-27</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://blog.aegix.dev/posts/ai-threats.html</loc>
+        <loc>https://blog.evanhelbig.com/posts/ai-threats.html</loc>
         <lastmod>2026-04-19</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://blog.aegix.dev/posts/secrets-management.html</loc>
+        <loc>https://blog.evanhelbig.com/posts/secrets-management.html</loc>
         <lastmod>2026-04-28</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://blog.aegix.dev/posts/wasm-security.html</loc>
+        <loc>https://blog.evanhelbig.com/posts/wasm-security.html</loc>
         <lastmod>2026-04-29</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://blog.aegix.dev/posts/ebpf-security.html</loc>
+        <loc>https://blog.evanhelbig.com/posts/ebpf-security.html</loc>
         <lastmod>2026-05-01</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://blog.aegix.dev/posts/iac-security.html</loc>
+        <loc>https://blog.evanhelbig.com/posts/iac-security.html</loc>
         <lastmod>2026-05-02</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://blog.aegix.dev/posts/wasm-vs-containers.html</loc>
+        <loc>https://blog.evanhelbig.com/posts/wasm-vs-containers.html</loc>
         <lastmod>2026-05-03</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://blog.aegix.dev/posts/confidential-computing.html</loc>
+        <loc>https://blog.evanhelbig.com/posts/confidential-computing.html</loc>
         <lastmod>2026-05-04</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://blog.aegix.dev/posts/quic-protocol.html</loc>
+        <loc>https://blog.evanhelbig.com/posts/quic-protocol.html</loc>
         <lastmod>2026-05-06</lastmod>
         <priority>0.8</priority>
     </url>

@@ -1,7 +1,7 @@
 [package]
-name = "aegix-wasm"
+name = "blog-wasm-engine"
 version = "0.1.0"
-authors = ["Aegix Security"]
+authors = ["Evan Helbig"]
 edition = "2021"
 
 [lib]
