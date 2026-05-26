@@ -76,7 +76,7 @@
 
         <p style="color: var(--text-dim); font-size: 0.9rem;">
             > Initiating system recovery...<br>
-            > Trace ID: ${Math.random().toString(36).substr(2, 9).toUpperCase()}<br>
+            > Trace ID: <span id="trace-id"></span><br>
             > Status: DISCONNECTED<span class="cursor"></span>
         </p>
 
@@ -84,8 +84,8 @@
     </div>
 
     <script>
-        // Simple random trace ID on load
-        document.querySelector('p').innerHTML = document.querySelector('p').innerHTML.replace('${Math.random().toString(36).substr(2, 9).toUpperCase()}', Math.random().toString(36).substr(2, 9).toUpperCase());
+        document.getElementById('trace-id').textContent =
+            Math.random().toString(36).slice(2, 11).toUpperCase();
     </script>
 </body>
 
