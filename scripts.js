@@ -259,11 +259,11 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // --- Console (Terminal) ---
-    const termTrigger = document.querySelector('.terminal-trigger');
-    const termWindow = document.querySelector('.terminal-window');
-    const termClose = document.querySelector('.terminal-close');
-    const termInput = document.getElementById('term-input');
-    const termOutput = document.getElementById('term-output');
+    const termTrigger = document.getElementById('terminal-trigger');
+    const termWindow = document.getElementById('terminal-window');
+    const termClose = document.getElementById('terminal-close');
+    const termInput = document.getElementById('terminal-input');
+    const termOutput = document.getElementById('terminal-output');
 
     if (termTrigger) {
         termTrigger.addEventListener('click', () => {
