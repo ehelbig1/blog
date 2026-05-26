@@ -1,0 +1,5 @@
+# Rust / wasm build artifacts (the loadable output lives in wasm-engine/pkg/, which IS committed)
+/wasm-engine/target/
+
+# Node
+node_modules/

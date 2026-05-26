@@ -201,28 +201,50 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- WASM Engine Bridge ---
+    // The console/playgrounds run the compiled Rust engine in wasm-engine/pkg.
+    // We keep an equivalent pure-JS path as a fallback so the UI never breaks
+    // if the module fails to load (old browser, fetch error, etc.).
+    let wasmEngine = null;
+    (async () => {
+        try {
+            const mod = await import('/wasm-engine/pkg/blog_wasm_engine.js');
+            await mod.default();
+            wasmEngine = new mod.BlogEngine();
+        } catch (e) {
+            console.warn('[WASM] engine unavailable, using JS fallback:', e);
+        }
+    })();
+
+    const WASM_TAG = '<span style="color: var(--primary)">[WASM_ENGINE]</span>';
+    const colorPolicy = (text) => {
+        if (text.startsWith('[SUCCESS]')) return `<span style="color: #4ade80">${text}</span>`;
+        if (text.startsWith('[FAILED]')) return `<span style="color: #f87171">${text}</span>`;
+        return `<span style="color: var(--secondary)">${text}</span>`;
+    };
+
     const wasmProxy = {
         genkey: () => {
-            // Simulated Rust Logic
+            if (wasmEngine) return `${WASM_TAG} ${wasmEngine.genkey()}`;
             const key = Array.from({
                 length: 32
             }, () => Math.floor(Math.random() * 16).toString(16)).join('');
-            return `<span style="color: var(--primary)">[WASM_ENGINE]</span> Generated 256-bit AES Key: 0x${key}`;
+            return `${WASM_TAG} Generated 256-bit AES Key: 0x${key}`;
         },
         verify: (token) => {
-            // Simulated Rust Logic
+            if (wasmEngine) return `${WASM_TAG} ${wasmEngine.verify(token || '')}`;
             const valid = token && token.startsWith('eyJ') && token.includes('.');
             return valid ?
-                `<span style="color: var(--primary)">[WASM_ENGINE]</span> JWT Signature Matched. Principal: admin.` :
-                `<span style="color: var(--primary)">[WASM_ENGINE]</span> [INVALID] Signature Mismatch.`;
+                `${WASM_TAG} JWT Signature Matched. Principal: admin.` :
+                `${WASM_TAG} [INVALID] Signature Mismatch.`;
         },
         encrypt: (data) => {
             if (!data) return 'ERROR: Usage "encrypt <data>"';
+            if (wasmEngine) return `${WASM_TAG} ${wasmEngine.encrypt(data)}`;
             const encrypted = data.split('').map(c => String.fromCharCode(c.charCodeAt(0) ^ 42)).join('');
-            return `<span style="color: var(--primary)">[WASM_ENGINE]</span> Encrypted Payload (XOR-42): ${encrypted}`;
+            return `${WASM_TAG} Encrypted Payload (XOR-42): ${encrypted}`;
         },
         evaluate: (policy) => {
-            // Simulated Rust Logic
+            if (wasmEngine) return colorPolicy(wasmEngine.evaluate(policy || ''));
             if (policy.includes('"trust_score":')) {
                 const parts = policy.split('"trust_score":')[1].split(/[},]/)[0].trim();
                 const score = parseInt(parts);
@@ -237,11 +259,11 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // --- Console (Terminal) ---
-    const termTrigger = document.querySelector('.terminal-trigger');
-    const termWindow = document.querySelector('.terminal-window');
-    const termClose = document.querySelector('.terminal-close');
-    const termInput = document.getElementById('term-input');
-    const termOutput = document.getElementById('term-output');
+    const termTrigger = document.getElementById('terminal-trigger');
+    const termWindow = document.getElementById('terminal-window');
+    const termClose = document.getElementById('terminal-close');
+    const termInput = document.getElementById('terminal-input');
+    const termOutput = document.getElementById('terminal-output');
 
     if (termTrigger) {
         termTrigger.addEventListener('click', () => {

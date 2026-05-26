@@ -1,0 +1,18 @@
+{
+  "name": "blog-wasm-engine",
+  "type": "module",
+  "collaborators": [
+    "Evan Helbig"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "blog_wasm_engine_bg.wasm",
+    "blog_wasm_engine.js",
+    "blog_wasm_engine.d.ts"
+  ],
+  "main": "blog_wasm_engine.js",
+  "types": "blog_wasm_engine.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
