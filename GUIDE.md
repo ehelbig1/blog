@@ -33,12 +33,14 @@ Place a hero image in `assets/` with a descriptive filename. Specs:
 1.  Duplicate an existing post (e.g., `posts/zero-trust.html`) → `posts/<slug>.html`.
 2.  Edit **every** one of these spots — most are easy to miss because the file is long:
 
-    **`<head>`**
+    **`<head>`** — easiest is to copy the whole metadata block from a recent post (e.g. `posts/quic-protocol.html`) and swap the per-post values. The full set, in order:
     - `<title>`: `<Post Title> | Evan Helbig`
     - `<meta name="description">`: 1-sentence summary (used by search engines).
-    - `<meta property="og:title">`: same string as `<title>`.
-    - `<meta property="og:description">`: same as the description (or a punchier social variant).
-    - `<meta property="og:image">`: `../assets/<slug>_hero.png`.
+    - `<link rel="canonical">`: `https://blog.evanhelbig.com/posts/<slug>.html`.
+    - Open Graph: `og:type` = `article`, plus `og:url` (canonical), `og:title` (same as `<title>`), `og:description` (same as description), `og:image`, and `og:site_name` = `Evan Helbig`.
+    - Twitter: `twitter:card` = `summary_large_image`, plus `twitter:url`, `twitter:title`, `twitter:description`, `twitter:image`.
+    - **`og:image` / `twitter:image` MUST be absolute URLs** (`https://blog.evanhelbig.com/assets/<slug>_hero.png`) — crawlers don't resolve relative `../assets/...` paths.
+    - `<script type="application/ld+json">`: a `BlogPosting` object. Update `headline` (title without the ` | Evan Helbig` suffix), `description`, `image` (absolute), `datePublished`/`dateModified` (ISO `YYYY-MM-DD`), `mainEntityOfPage.@id` and `url` (canonical).
 
     **`<body>`**
     - `.post-meta` triple — three `<span>`s: date (`Apr 28, 2026` format), tag (must match the `tag` you'll put in `posts.json`), read time (e.g. `8 min read`).
